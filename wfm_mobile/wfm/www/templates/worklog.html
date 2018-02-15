@@ -1,0 +1,23 @@
+<ion-view title="worklog" id="page3">
+  <ion-content padding="true" class="has-header">
+    <form id="worklog-form3" class="list">
+      <creator-map-component options="{}" marker="true" location="Madison Capital" zoom="12" style="display:block;position:relative;width:100%;height:300px;">
+        <ui-gmap-google-map ng-if="map.center" center="map.center" zoom="map.zoom" options="map.options">
+          <ui-gmap-marker coords="map.marker.coords" idkey="map.marker.id" options="map.marker.options"></ui-gmap-marker>
+        </ui-gmap-google-map>
+      </creator-map-component>
+      <label class="item item-select" id="worklog-select1">
+        <span class="input-label">location</span>
+        <select></select>
+      </label>
+      <label class="item item-input" id="worklog-input7">
+        <span class="input-label">time</span>
+        <input type="date" placeholder="">
+      </label>
+      <label class="item item-input" id="worklog-input8">
+        <span class="input-label">work detial</span>
+        <input type="text" placeholder="">
+      </label>
+    </form>
+  </ion-content>
+</ion-view>
